@@ -30,12 +30,12 @@ A command-line tool to convert Excel files (.xlsx/.xls) to CSV format with autom
 
 ### Basic Conversion
 ```bash
-python converter.py -i input.xlsx -o output.csv
+python csv_converter.py -i input.xlsx -o output.csv
 ```
 
 ### Batch Process a Directory
 ```bash
-python converter.py -i input_folder -o output_folder
+python csv_converter.py -i input_folder -o output_folder
 ```
 
 ### All Available Options
@@ -47,18 +47,18 @@ python converter.py --help
 
 1. Convert single file (email columns only):
    ```bash
-   python converter.py -i data/contacts.xlsx -o converted/emails.csv
+   python csv_converter.py -i data/contacts.xlsx -o converted/emails.csv
    ```
 
 2. Convert all Excel files in a folder (keep all columns):
    ```bash
-   python converter.py -i data/ -o converted/ --all-columns
+   python csv_converter.py -i data/ -o converted/ --all-columns
    ```
 
 ## File Structure 📂
 ```
 excel-to-csv-converter/
-├── converter.py       # Main conversion script
+├── csv_converter.py       # Main conversion script
 ├── requirements.txt   # Dependency list
 ├── LICENSE            # MIT License
 └── README.md          # This documentation
@@ -71,4 +71,5 @@ Pull requests are welcome! Please ensure:
 3. Update documentation as needed
 
 ## License 📜
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
